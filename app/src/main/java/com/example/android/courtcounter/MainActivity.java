@@ -33,11 +33,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void add_2points(View view) {
-        displayForTeamA(2);
+        scoreTeamA = scoreTeamA + 2;
+        displayForTeamA(scoreTeamA);
     }
 
-    public void do_freethrow(View view) {
-        displayForTeamA(1);
+    public void add_1point(View view) {
+        scoreTeamA = scoreTeamA + 1;
+        displayForTeamA(scoreTeamA);
     }
 
 
