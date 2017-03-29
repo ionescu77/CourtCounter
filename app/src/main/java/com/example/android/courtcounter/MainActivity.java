@@ -6,13 +6,13 @@ import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    int scoreTeamA = 0;
+    int scoreTeamA = 0; // Tracks score for Team A
+    int scoreTeamB = 0; // Tracks score for Team B
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        displayForTeamA(8);
     }
 
     /**
@@ -22,9 +22,16 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
+    /**
+     * Displays the given score for Team B.
+     */
+    public void displayForTeamB(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
+        scoreView.setText(String.valueOf(score));
+    }
 
     /**
-     * Do stuff
+     * Do stuff for Team A
      */
 
     public void add_3points(View v) {
@@ -40,6 +47,25 @@ public class MainActivity extends AppCompatActivity {
     public void add_1point(View view) {
         scoreTeamA = scoreTeamA + 1;
         displayForTeamA(scoreTeamA);
+    }
+
+    /**
+     * Do stuff for Team B
+     */
+
+    public void add_3pointsTeamB(View v) {
+        scoreTeamB = scoreTeamB + 3;
+        displayForTeamB(scoreTeamB);
+    }
+
+    public void add_2pointsTeamB(View view) {
+        scoreTeamB = scoreTeamB + 2;
+        displayForTeamB(scoreTeamB);
+    }
+
+    public void add_1pointTeamB(View view) {
+        scoreTeamB = scoreTeamB + 1;
+        displayForTeamB(scoreTeamB);
     }
 
 
