@@ -130,11 +130,12 @@
     </LinearLayout>
 
     <TextView
+        android:id="@+id/game_trend"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:layout_above="@+id/resetButton"
         style="@style/gameResultStyle"
-        android:text="@string/gameResult"
+        android:text="@string/gameTrend"
         />
 
     <Button
