@@ -7,5 +7,6 @@
     <string name="plus3Button">+3 Points</string>
     <string name="plus2Button">+2 Points</string>
     <string name="freeThrowButton">Free throw</string>
+    <string name="gameResult">-</string>
     <string name="resetButton">RESET SCORE</string>
 </resources>

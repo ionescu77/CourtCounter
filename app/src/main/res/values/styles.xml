@@ -41,6 +41,17 @@
         <item name="android:layout_marginRight">24dp</item>
         <item name="android:layout_marginBottom">8dp</item>
     </style>
+    <style name="gameResultStyle">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingLeft">32dp</item>
+        <item name="android:paddingRight">32dp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">56sp</item>
+        <item name="android:background">#8000</item>
+    </style>
     <style name="resetButtonStyle">
         <item name="android:layout_alignParentBottom">true</item>
         <item name="android:layout_centerHorizontal">true</item>
