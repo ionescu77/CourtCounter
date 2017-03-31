@@ -107,7 +107,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/stdButtonStyle"
-                android:text="@string/plus2Button"
+                android:text="@string/plus3Button"
                 android:onClick="add_3pointsTeamB"
                 />
 
@@ -132,7 +132,7 @@
     <TextView
         android:id="@+id/game_trend"
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
+        android:layout_width="88sp"
         android:layout_above="@+id/resetButton"
         style="@style/gameResultStyle"
         android:text="@string/gameTrend"

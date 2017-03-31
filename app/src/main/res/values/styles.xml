@@ -44,6 +44,7 @@
     <style name="gameResultStyle">
         <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
         <item name="android:paddingTop">12dp</item>
         <item name="android:paddingBottom">12dp</item>
         <item name="android:paddingLeft">32dp</item>

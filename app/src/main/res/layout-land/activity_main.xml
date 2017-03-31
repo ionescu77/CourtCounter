@@ -75,12 +75,14 @@
                 />
         </LinearLayout>
 
-        <View
-            android:layout_width="3dp"
-            android:layout_height="match_parent"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:background="@color/colorPrimaryDark"></View>
+        <TextView
+            android:id="@+id/game_trend"
+            android:layout_height="wrap_content"
+            android:layout_width="84sp"
+            style="@style/gameResultStyle"
+            android:text="@string/gameTrend"
+            />
+
 
         <LinearLayout
             android:layout_width="0dp"
@@ -107,7 +109,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/stdButtonStyle"
-                android:text="@string/plus2Button"
+                android:text="@string/plus3Button"
                 android:onClick="add_3pointsTeamB"
                 />
 
@@ -129,13 +131,13 @@
         </LinearLayout>
     </LinearLayout>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="@style/resetButtonStyle"
-            android:text="@string/resetButton"
-            android:onClick="resetAllScores"
-            />
-
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/resetButtonStyle"
+        android:text="@string/resetButton"
+        android:onClick="resetAllScores"
+        />
 
 </RelativeLayout>

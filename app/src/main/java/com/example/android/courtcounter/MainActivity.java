@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     int scoreTeamA = 0; // Tracks score for Team A
     int scoreTeamB = 0; // Tracks score for Team B
-
+    String gameTrend = "-";
 
 
     @Override
@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+
     /**
      * Displays the given score for Team A.
      */
@@ -50,22 +51,39 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * Displays the game trend, which team is winning.
+     */
+    public void displayGameTrend(int scoreA, int scoreB) {
+        TextView gameTrend = (TextView) findViewById(R.id.game_trend);
+        if (scoreA > scoreB) {
+            gameTrend.setText(String.valueOf(">"));
+        } else if (scoreA < scoreB) {
+            gameTrend.setText(String.valueOf("<"));
+        } else {
+            gameTrend.setText(String.valueOf("-"));
+        }
+    }
+
+    /**
      * Do stuff for Team A
      */
 
     public void add_3points(View v) {
         scoreTeamA = scoreTeamA + 3;
         displayForTeamA(scoreTeamA);
+        displayGameTrend(scoreTeamA, scoreTeamB);
     }
 
     public void add_2points(View view) {
         scoreTeamA = scoreTeamA + 2;
         displayForTeamA(scoreTeamA);
+        displayGameTrend(scoreTeamA, scoreTeamB);
     }
 
     public void add_1point(View view) {
         scoreTeamA = scoreTeamA + 1;
         displayForTeamA(scoreTeamA);
+        displayGameTrend(scoreTeamA, scoreTeamB);
     }
 
     /**
@@ -75,16 +93,19 @@ public class MainActivity extends AppCompatActivity {
     public void add_3pointsTeamB(View v) {
         scoreTeamB = scoreTeamB + 3;
         displayForTeamB(scoreTeamB);
+        displayGameTrend(scoreTeamA, scoreTeamB);
     }
 
     public void add_2pointsTeamB(View view) {
         scoreTeamB = scoreTeamB + 2;
         displayForTeamB(scoreTeamB);
+        displayGameTrend(scoreTeamA, scoreTeamB);
     }
 
     public void add_1pointTeamB(View view) {
         scoreTeamB = scoreTeamB + 1;
         displayForTeamB(scoreTeamB);
+        displayGameTrend(scoreTeamA, scoreTeamB);
     }
 
     /**
@@ -96,6 +117,8 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamB = 0;
         displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
+        displayGameTrend(scoreTeamA, scoreTeamB);
     }
+
 
 }
