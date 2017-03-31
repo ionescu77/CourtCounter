@@ -7,44 +7,33 @@
         <item name="colorPrimary">#FF9800</item>
         <!-- Background color of buttons in the app -->
         <item name="colorButtonNormal">#FF9800</item>
-        <item name="android:layout_gravity">center</item>
-    </style>
-    <style name="topBannerStyle">
-        <item name="android:layout_alignParentTop">true</item>
-        <item name="android:fontFamily">sans-serif-condensed</item>
-        <item name="android:gravity">center</item>
-        <item name="android:paddingBottom">8dp</item>
-        <item name="android:paddingTop">8dp</item>
-        <item name="android:background">@android:color/black</item>
-        <item name="android:textColor">@color/colorPrimary</item>
-        <item name="android:textSize">18sp</item>
     </style>
     <style name="teamStyle">
         <item name="android:fontFamily">sans-serif-medium</item>
         <item name="android:gravity">center</item>
-        <item name="android:paddingBottom">16dp</item>
-        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:paddingTop">12dp</item>
         <item name="android:textColor">#ededed</item>
         <item name="android:textSize">14sp</item>
     </style>
     <style name="scoreStyle">
         <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:gravity">center</item>
-        <item name="android:paddingTop">24dp</item>
-        <item name="android:paddingBottom">24dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
         <item name="android:textColor">#ffffff</item>
         <item name="android:textSize">56sp</item>
         <!--<item name="android:background">#8000</item>-->
     </style>
     <style name="stdButtonStyle">
-        <item name="android:layout_marginLeft">24dp</item>
-        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:layout_marginLeft">48dp</item>
+        <item name="android:layout_marginRight">48dp</item>
         <item name="android:layout_marginBottom">8dp</item>
     </style>
     <style name="resetButtonStyle">
         <item name="android:layout_alignParentBottom">true</item>
         <item name="android:layout_centerHorizontal">true</item>
-        <item name="android:layout_marginTop">16dp</item>
-        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
     </style>
 </resources>

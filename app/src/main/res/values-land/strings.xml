@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">Keep the Score!</string>
-    <string name="appBannerText">Watch the Game &amp; Keep the Score!</string>
+    <string name="app_name">CourtCounter</string>
     <string name="teamA">Team A</string>
     <string name="teamB">Team B</string>
     <string name="initialScore">0</string>
